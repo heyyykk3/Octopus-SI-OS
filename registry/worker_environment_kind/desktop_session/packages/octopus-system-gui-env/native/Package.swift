@@ -25,7 +25,7 @@ let package = Package(
             name: "OctopusDesktopNative",
             dependencies: [.product(name: "Markdown", package: "swift-markdown"), "OctopusDesktopProducerBridge"],
             path: ".",
-            exclude: ["build.cjs", "input-check.swift", "Package.resolved", "pip", "producer-bridge",
+            exclude: ["build.cjs", "build.test.cjs", "input-check.swift", "Package.resolved", "pip", "producer-bridge",
                 "configure-transport.cjs", "configure-transport.test.cjs", "desktop.sb", "resources"],
             sources: [
                 "input.swift", "channel.swift", "app-types.swift", "applications.swift", "accessibility.swift", "ax-attributed-text.swift", "ax-presentation.swift",

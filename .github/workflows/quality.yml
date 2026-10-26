@@ -254,6 +254,7 @@ jobs:
 
       - name: Client setup and terminal contracts
         run: |
+          node --test registry/worker_environment_kind/desktop_session/packages/octopus-system-gui-env/native/build.test.cjs
           node app/scripts/test-client-setup.cjs
           npm --prefix app run test:cli
 
